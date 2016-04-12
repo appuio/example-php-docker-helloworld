@@ -13,8 +13,8 @@ $ oc new-project example-php-dockerfile-helloworld
 
 #### Create Application and expose Service
 ```
-$ oc new-app https://github.com/appuio/example-php-docker-helloworld.git --strategy=docker --name=appuio-php-docker-example
+$ oc new-app https://github.com/appuio/example-php-docker-helloworld.git --strategy=docker --name=appuio-php-docker-ex
 
-$ oc expose service appuio-php-docker-example
+$ oc expose service appuio-php-docker-ex
 ```
 
