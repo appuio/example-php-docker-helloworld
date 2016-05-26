@@ -1,1 +1,1 @@
-<?php echo getenv('HOSTNAME')?>
+POD: <?php echo getenv('HOSTNAME')?>
