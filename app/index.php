@@ -38,7 +38,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">APPUiO PHP Demo</a>
+          <a class="navbar-brand" href="#">APPUiO PHP Demo :)</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
@@ -53,7 +53,7 @@
     <div class="container">
 
       <div class="starter-template">
-        <h1>Hallo <?php echo 'APPUiO'?></h1>
+        <h1>Hallo <?php echo 'APPUiO code'?></h1>
         <p class="lead">APPUiO Example Dockerfile PHP</p>
       </div>
 
