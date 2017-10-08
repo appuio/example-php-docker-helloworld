@@ -18,3 +18,4 @@ $ oc new-app https://github.com/appuio/example-php-docker-helloworld.git --strat
 $ oc expose service appuio-php-docker-ex
 ```
 
+
