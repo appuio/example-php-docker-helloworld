@@ -1,4 +1,4 @@
-FROM docker.io/openshift/php-56-centos7
+FROM docker.io/centos/php-56-centos7
 
 ADD app /opt/app-root/src
 
