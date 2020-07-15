@@ -7,14 +7,15 @@ This is an example php application, which can be deployed to APPUiO using the fo
 ### CLI / oc Client
 
 #### Create New OpenShift Project
-```
-$ oc new-project example-php-dockerfile-helloworld
+
+```bash
+oc new-project example-php-dockerfile-helloworld
 ```
 
 #### Create Application and expose Service
-```
-$ oc new-app https://github.com/appuio/example-php-docker-helloworld.git --strategy=docker --name=appuio-php-docker-ex
 
-$ oc expose service appuio-php-docker-ex
-```
+```bash
+oc new-app https://github.com/appuio/example-php-docker-helloworld.git --strategy=docker --name=appuio-php-docker-ex
 
+oc expose service appuio-php-docker-ex
+```
