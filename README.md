@@ -19,3 +19,17 @@ oc new-app https://github.com/appuio/example-php-docker-helloworld.git --strateg
 
 oc expose service appuio-php-docker-ex
 ```
+
+## Build and run the image
+
+Build the image:
+
+```bash
+buildah build-using-dockerfile -t appuio/example-php-docker-helloworld:latest .
+```
+
+Run it locally with the following command. Beware that `--rmi` automatically removes the built image when the container stops, so you either have to rebuild it or remove the parameter from the command.
+
+```bash
+podman run --rm --rmi --interactive --publish 8080:8080 localhost/appuio/example-php-docker-helloworld
+```
