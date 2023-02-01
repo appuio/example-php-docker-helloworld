@@ -11,7 +11,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: Build the Container image
+    - name: Build the Image
       run: docker build . --file Dockerfile --tag appuio/example-php-docker-helloworld:latest
-    - name: Run the Container image
-      run: docker run -d appuio/example-php-docker-helloworld:latest
+    - name: Run the Container
+      run: docker run -d --publish 8080:8080 appuio/example-php-docker-helloworld:latest
+    - name: Test the app
+      run: sleep 11 && curl -f localhost:8080/health/
+     
