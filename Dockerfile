@@ -1,4 +1,4 @@
-FROM docker.io/centos/php-71-centos7
+FROM registry.access.redhat.com/ubi8/php-74:1
 
 ADD app /opt/app-root/src
 
