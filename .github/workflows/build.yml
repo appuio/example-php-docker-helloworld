@@ -11,5 +11,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: Build the Docker image
+    - name: Build the Container image
       run: docker build . --file Dockerfile --tag appuio/example-php-docker-helloworld:latest
+    - name: Run the Container image
+      run: docker run -d appuio/example-php-docker-helloworld:latest
