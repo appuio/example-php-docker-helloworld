@@ -1,4 +1,4 @@
-FROM registry.access.redhat.com/ubi8/php-74:1-103.1695267227
+FROM registry.access.redhat.com/ubi8/php-74:1-119.1712880523
 
 ADD app /opt/app-root/src
 
